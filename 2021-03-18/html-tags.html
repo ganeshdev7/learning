@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HTML tags</title>
+		<style>
+			body {
+				color: #444;
+			}
+			.tag-section {
+				margin-bottom: 30px;
+			}
+			.tag-name {
+				font-weight: bold;
+				color: #000;
+				font-size: 24px;
+			}
+			.tag-description {
+			}
+		</style>
+	</head>
+	<body>
+		<div class="tag-section">
+			<div class="tag-name">A</div>
+			<div class="tag-description">Defines a hyperlink</div>
+			<div class="tag-attributes">
+				<b>supported attributes:</b> <br />
+				<b>download</b> - to support downloading, <br />
+				<b>href</b> - to give link <br />
+				<b>target</b> - Specifies where to open shape the target URL<br />
+				1.blank
+				2.parent
+				3.self
+				4.top				
+				<br />
+				<b>hreflang</b>-Specifies the language of the linked document<br />
+				<b>Example:</b>
+				<a href="http://www.google.com">Google without target</a><br />
+				<a href="http://www.google.com" target="blank">Google with target</a>
+			</div>
+	    </div>
+		<div class="tag-section">
+			<div class="tag-name">Abbr</div>
+			<div class="tag-description">Defines an abbreviation or an acronym</div>
+			 <b>Example:</b>
+			 <abbr title="Hypertext markup language">HTML</abbr>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Address</div>
+			 <div class="tag-description">	Defines contact information for the author/owner of a document</div>
+			  <b>Example:</b>
+			  <address>
+			     Visit us:<br />
+				 Contact us:
+			  </address>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Area</div>
+			<div class="tag-description">Defines an area inside an image map</div>
+			<div class="tag-attributes">
+			  <b>supported attributes:</b><br />
+			  <b>alt</b>-Specifies an alternate text for the area. Required if the href attribute is present<br />
+			  <b>coords</b>-Specifies the coordinates of the area<br />
+			  <b>download</b>-Specifies that the target will be downloaded when a user clicks on the hyperlink<br />
+			  <b>shape</b>-Specifies the shape of the area<br />
+			       1.default
+				   2.rect
+				   3.circle
+				   4.poly<br />
+			<b>Example:</b>
+		    </div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Article</div>
+			<div class="tag-description">Defines an artice</div>
+			<b>Example:</b>
+			<article>
+				<h2>Google Chrome</h2>
+				<p>Google Chrome is a web browser developed by Google,released in 2008. Chrome is the world's most popular web browser today!</p>
+			</article>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Aside</div>
+			<div class="tag-description">Defines content aside from the page content</div>
+			<b>Example:</b>
+			<aside>
+				<p>Hypertext Markup language</p>
+			</aside>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Audio</div>
+			<div class="tag-description">Defines embedded sound content</div>
+			<div class="tag-attributes">
+			    <b>supported attribute:</b><br />
+				<b>autoplay</b>-Specifies that the audio will start playing as soon as it is ready<br />
+				<b>controls</b>-Specifies that audio controls should be displayed (such as a play/pause button etc)<br />
+				<b>loop</b>-Specifies that the audio will start over again, every time it is finished<br />
+				<b>muted</b>-Specifies that the audio output should be muted<br />
+				<b>preload</b>-Specifies if and how the author thinks the audio should be loaded when the page loads<br />
+				<b>src</b>-Specifies the URL of the audio file<br />
+				<b>Example:</b><br />
+				<audio controls>
+					<source src="./file_example_MP3_700KB.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+		</div>
+		<div class="tag-section">
+		    <div class="tag-name">B</div>
+			<div class="tag-description">Defines bold text</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Base</div>
+			<div class="tag-description">specifies the base URL and/or target for all rela</div>
+			<div class="tag-attributes">
+				<b>supported attributes:</b><br />
+				<b>href</b>-Specifies the base URL for all relative URLs in the page<br />
+				<b>target</b>-Specifies the default target for all hyperlinks and forms in the page<br />
+				1.blank
+				2.parent
+				3.self
+				4.top<br />
+				<b>Example:</b>
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Bdi</div>
+			<div class="tag-description">Isolates a part of text that might be formatted in a different direction from other text outside it</div>
+			<b>Example:</b>
+			<bdi>ganesh</bdi>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Bdo</div>
+			<div class="tag-description">Overrides the current text direction</div>
+			<div class="tag-attribute">
+				<b>supported attribute:</b><br />
+				<b>dir</b>-Required. Specifies the text direction of the text inside the <bdo> element<br />
+			<b>Example:</b>
+			<bdo dir="rtl">ganesh</bdo>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Blockquote</div>
+			<div class="tag-description">Defines a section that is quoted from another source</div>	
+			<div class="tag-attribute">
+				cite-Specifies the source of the quotation<br />
+				<b>Example:</b>
+				<blockquote>Programing</blockquote>
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Button</div>
+			<div class="tag-description">Defines a clickable button</div>
+			<div class="tag-attributes">
+			  <b>supported attributes:</b><br />
+			    <b>autofocus</b>-Specifies that a button should automatically get focus when the page loads<br />
+				<b>disabled</b>-Specifies that a button should be disabled<br />
+				<b>form</b>-Specifies which form the button belongs to<br />
+				<b>formaction</b>-Specifies where to send the form-data when a form is submitted. Only for type="submit"<br />
+				<b>formenctype</b>-Specifies how form-data should be encoded before sending it to a server. Only for type="submit"<br />
+				<b>formmethod</b>-Specifies how to send the form-data (which HTTP method to use). Only for type="submit"<br />
+				<b>formnovalidate</b>-Specifies that the form-data should not be validated on submission. Only for type="submit"<br />
+				<b>formtarget</b>-Specifies where to display the response after submitting the form. Only for type="submit"<br />
+				<b>name</b>-Specifies a name for the button<br />
+				<b>type</b>-Specifies the type the button<br />
+				<b>value</b>-Specifies an initial value for the button<br />
+				<b>Example:</b>
+				<button>Click Me</button>
+				</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Canvas</div>
+			<div class="tag-description">Used to draw graphics, on the fly, via scripting (usually JavaScript)</div>	
+			<div class="tag-attributes">
+			 <b>supported attributes:</b><br />
+			 <b>height</b>-Specifies the height of the canvas. Default value is 150<br />
+			 <b>width</b>-Specifies the width of the canvas Default value is 300
+			 </div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Caption</div>
+			<div class="tag-description">Defines a table caption</div>
+			<b>Example:</b>
+			<caption>HTML Program</caption>
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Cite</div>
+			<div class="tag-description">Defines the title of a work</div>
+			<b>Example:</b>
+			<cite>Programing</cite>
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Code</div>
+			<div class="tag-description">Defines a piece of computer code</div>
+			<b>Example:</b>
+			<code>Computer code</code>
+		</div>
+	    <div class="tag-section">
+			<div class="tag-name">Col</div>
+			<div class="tag-description">Specifies column properties for each column within a <colgroup> element </div>	
+			<div class="tag-attribute">
+			<b>supported attribute:</b><br />
+			<b>span</b>-Specifies the number of columns a <col> element should span
+		</div>
+		 <div class="tag-section">
+			<div class="tag-name">Colgroup</div>
+			<div class="tag-description">Specifies a group of one or more columns in a table for formatting</div>
+			</div>
+		</div>
+		 <div class="tag-section">
+			<div class="tag-name">Data</div>
+			<div class="tag-description">Adds a machine-readable translation of a given content</div>
+			<div class="tag-attribute">
+			<b>supported attribute:</b>
+			<b>value</b>-Specifies the machine-readable translation of the content of the element
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Datalist</div>
+			<div class="tag-description">Specifies a list of pre-defined options for input controls</div>
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">dd</div>
+			<div class="tag-description">Defines a description/value of a term in a description list</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Del</div>
+			<div class="tag-description">Defines text that has been deleted from a document</div>
+			<div class="tag-attributes">
+				<b>supported attributes:</b><br />
+				<b>cite</b>-Specifies a URL to a document that explains the reason why the text was deleted/changed<br />
+				<b>datetime</b>-Specifies the date and time of when the text was deleted/changed<br />
+				<b>Example:</b>
+				<del>Google</del>
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Details</div>
+			<div class="tag-description">Defines additional details that the user can view or hide</div>
+			<div class="tag-attribute">
+				<b>supported attribute:</b><br />
+				<b>open</b>-Specifies that the details should be visible (open) to the user<br />
+				<b>Example:</b>
+				<details>Hypertext markup language</details>
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Dfn</div>
+			<div class="tag-description">Specifies a term that is going to be defined within the content</div>
+			<b>Example:</b>
+			<dfn>HTML</dfn>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Dialog</div>
+			<div class="tag-description">Defines a dialog box or window</div><br />
+			<b>Example:</b>
+			<dialog open>Tis is a open dialog window</dialog>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Dl</div>
+			<div class="tag-description">Defines a description list</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Dt</div>
+			<div class="tag-description">Defines a term/name in a description list</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Em</div>
+			<div class="tag-description">Defines emphasized text</div>
+			<b>Example:</b>
+			<em>HTML</em>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Embed</div>
+			<div class="tag-description">Defines a container for an external application</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Fieldest</div>
+			<div class="tag-description">Groups related elements in a form</div>
+			<div class="tag-attributes">
+				<b>supported attributes:</b><br />
+				<b>disabled</b>-Specifies that a group of related form elements should be disabled<br />
+				<b>form</b>-Specifies which form the fieldset belongs to<br />
+				<b>name</b>-Specifies a name for the fieldset
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Figcaption</div>
+			<div class="tag-description">Defines a caption for a figure element</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Figure</div>
+			<div class="tag-description">Specifies self-contained content</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Footer</div>
+			<div class="tag-description">Defines a footer for a document or section</div>
+		</div>
+        <div class="tag-section">
+			<div class="tag-name">Form</div>
+			<div class="tag-description">Defines an HTML form for user input</div>
+			<div class="tag-attributes">
+			<b>supported attributes:</b><br />
+			<b>accept-charset</b>-Specifies the character encodings that are to be used for the form submission<br />
+			<b>action</b>-Specifies where to send the form-data when a form is submitted<br />
+			<b>autocomplete</b>-Specifies whether a form should have autocomplete on or off<br />
+			<b>enctype</b>-Specifies how the form-data should be encoded when submitting it to the server (only for method="post")<br />
+			<b>method</b>-Specifies the HTTP method to use when sending form-data<br />
+			<b>name</b>-Specifies the name of a form<br />
+			<b>novalidate</b>-Specifies that the form should not be validated when submitted<br />
+			<b>rel</b>-Specifies the relationship between a linked resource and the current document
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Header</div>
+			<div class="tag-description">Defines a header for a document or section</div>
+			<b>Example:</b>
+			<header>HTML</header>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">I</div>
+			<div class="tag-description">Defines a part of text in an alternate voice or mood</div>
+			<b>Example:</b>
+			<i>Hypertext Markup Language</i>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Iframe</div>
+			<div class="tag-description">Defines an inline frame</div>
+			<div class="tag-attributes">
+				<b>supported attributes:</b><br />
+				<b>allow</b>-Specifies a feature policy for the iframe<br />
+				<b>allowfullscreen</b>-Set to true if the iframe can activate fullscreen mode by calling the requestFullscreen() method<br />
+				<b>allowpaymenrequest</b>-Set to true if a cross-origin iframe should be allowed to invoke the Payment Request API<br />
+				<b>height</b>-Specifies the height of an iframe. Default height is 150 pixels<br />
+				<b>loading</b>-Specifies whether a browser should load an iframe immediately or to defer loading of iframes until some conditions are met<br />
+				<b>name</b>-Specifies the name of an iframe<br />
+				<b>referrerpolicy</b>-Specifies which referrer information to send when fetching the iframe<br />
+				<b>snadbox</b>-Enables an extra set of restrictions for the content in an iframe<br />
+				<b>srcdoc</b>-Specifies the HTML content of the page to show in the iframe<br />
+				<b>width</b>-Specifies the width of an iframe. Default width is 300 pixels<br />
+				<b>Example:</b><br />
+				<iframe src="./dummy.html"></iframe>
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Img</div>
+			<div class="tag-description">Defines an image</div>
+			<div class="tag-attributes">
+				<b>supported attributes:</b>
+				<b>alt</b>-Defines an image<br />
+				<b>crossrigin</b>-Allow images from third-party sites that allow cross-origin access to be used with canvas<br />
+				<b>height</b>-Specifies the height of an image<br />
+				<b>ismap</b>-Specifies an image as a server-side image map<br />
+				<b>loading</b>-Specifies whether a browser should load an image immediately or to defer loading of images until some conditions are met<br />
+				<b>longdesc</b>-Specifies a URL to a detailed description of an image<br />
+				<b>referrerpolicy</b>-Specifies which referrer information to use when fetching an image<br />
+				<b>sizes</b>-Specifies image sizes for different page layouts<br />
+				<b>srcset</b>-Specifies a list of image files to use in different situations<br />
+				<b>usemap</b>-Specifies an image as a client-side image map<br />
+				<b>Example:</b><br />
+				<img src="C:\My programs\2021-03-18\Sample-jpg-image-50kb.jpg" width="100" height="100">
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Input</div>
+			<div class="tag-description">Defines an input control</div>
+			<div class="tag-attributes">
+				<b>supported attributes:</b><br />
+				<b>accept</b>-Specifies a filter for what file types the user can pick from the file input dialog box (only for type="file")<br />
+				<b>alt</b>-Specifies an alternate text for images (only for type="image")<br />
+				<b>autocomplete</b>-Specifies whether an input element should have autocomplete enabled<br />
+				<b>autofocus</b>-Specifies that an input element should automatically get focus when the page loads<br />
+				<b>checked</b>-Specifies that an input element should be pre-selected when the page loads (for type="checkbox" or type="radio")<br />
+				<b>dirname</b>-Specifies that the text direction will be submitted,<br />
+				<b>disabled</b>-Specifies that an input element should be disabled<br />
+				<b>form</b>-Specifies the form the input element belongs to,<br />
+				<b>formaction</b>-Specifies the URL of the file that will process the input control when the form is submitted (for type="submit" and type="image")<br />
+				<b>formenctype</b>-Specifies how the form-data should be encoded when submitting it to the server (for type="submit" and type="image")<br />
+				<b>formmethod</b>-Defines the HTTP method for sending data to the action URL (for type="submit" and type="image")<br />
+				<b>formnovalidate</b>-Defines that form elements should not be validated when submitted<br />
+				<b>formtarget</b>-Specifies where to display the response that is received after submitting the form (for type="submit" and type="image")<br />
+				<b>height</b>-Specifies the height of an input element (only for type="image")<br />
+				<b>list</b>-Refers to a datalist element that contains pre-defined options for an input element<br />
+				<b>max</b>-Specifies the maximum value for an input element<br />
+				<b>maxlength</b>-Specifies the maximum number of characters allowed in an input element<br />
+				<b>min</b>-Specifies a minimum value for an input element<br />
+				<b>minlength</b>-Specifies the minimum number of characters required in an input element<br />
+				<b>multiple</b>-Specifies that a user can enter more than one value in an input element<br />
+				<b>name</b>-Specifies the name of an input element<br />
+				<b>pattern</b>-Specifies a regular expression that an input element's value is checked against<br />
+				<b>placeholder</b>-Specifies a short hint that describes the expected value of an input element<br />
+				<b>readonly</b>-Specifies that an input field is read-only<br />
+				<b>required</b>-Specifies that an input field must be filled out before submitting the form<br />
+				<b>size</b>-Specifies the width, in characters, of an input element<br />
+				<b>src</b>-Specifies the URL of the image to use as a submit button (only for type="image")<br />
+				<b>step</b>-Specifies the interval between legal numbers in an input field<br />
+				<b>type</b>-Specifies the type input element to display<br />
+				<b>value</b>-Specifies the value of an input element<br />
+				<b>Example:</b>
+				<input type="text"><br /><br />
+				<input type="password">
+			</div>				
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Ins</div>
+			<div class="tag-description">Defines a text that has been inserted into a document</div>
+			<b>Example:</b>
+			<ins>google</ins>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Kbd</div>
+			<div class="tag-description">Defines keyboard input</div>
+			<div class="tag-attributes">
+				<b>supported attributes:</b><br />
+				<b>code</b>-Defines a piece of computer code<br />
+				<b>samp</b>-Defines sample output from a computer program<br />
+				<b>var</b>-Defines a variable<br />
+				<b>pre</b>-Defines preformatted text<br />
+				<b>Example:</b>
+				<kbd>ctrl</kbd>+c
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Label</div>
+			<div class="tag-description">Defines a label for an input element</div>
+			<div class="tag-attributes"</div>
+				<b>supported attributes:</b><br />
+				<b>for</b>-Specifies the id of the form element the label should be bound to<br />
+				<b>form</b>-Specifies which form the label belongs to<br />
+				<b>Example:</b>
+				<label for="male">Male</label>
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Legend</div>
+			<div class="tag-description">Defines a caption for a fieldset element</div>	
+			<b>Example:</b>
+			<fieldset><legend>Information:</legend></fieldset>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Link</div>
+			<div class="tag-description">Defines the relationship between a document and an external resource (most used to link to style sheets)</div>
+			<div class="tag-attributes">
+				<b>supported attributes:</b><br />
+				<b>crossorigin</b>-Specifies how the element handles cross-origin requests<br />
+				<b>href</b>-Specifies the location of the linked document<br />
+				<b>hreflang</b>-Specifies the language of the text in the linked document<br />
+				<b>media</b>-Specifies on what device the linked document will be displayed<br />
+				<b>referrerpolicy</b>-Specifies which referrer to use when fetching the resource<br />
+				<b>rel</b>-Required. Specifies the relationship between the current document and the linked document<br />				 <b>sizes</b>-Specifies the size of the linked resource. Only for rel="icon"<br />
+				<b>title</b>-Defines a preferred or an alternate stylesheet<br />
+				<b>type</b>-Specifies the media type of the linked document<br />
+				<b>Example:</b><br />
+				<link  rel="stylesheet" href="styles.css">
+			</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Main</div>
+			<div class="tag-description">Specifies the main content of a document</div>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Mark</div>
+			<div class="tag-description">Defines marked/highlighted text</div>
+			<b>Example:</b>
+			<mark>Hypertext Markup language</mark>
+		</div>
+		<div class="tag-section">
+			<div class="tag-name">Meta</div>
+			<div class="tag-description">Defines metadata about an HTML document</div>
+		    <div class="tag-attributes">
+			   <b>supported attributes:</b><br />
+			   <b>charset</b>-Specifies the character encoding for the HTML document<br />
+			   <b>content</b>-	Specifies the value associated with the http-equiv or name attribute<br />
+			   <b>http-equiv</b>-Provides an HTTP header for the information/value of the content attribute<br />
+			   <b>name</b>-Specifies a name for the metadata
+		</div>
+	</body>
+</html>
