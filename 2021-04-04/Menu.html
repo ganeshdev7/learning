@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Menu</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				background: url('./about_bg.png');
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.menu-bar {
+				text-align: center;
+			}
+			.menu-bar ul  {
+				display: inline-flex;
+				list-style: none;
+			}
+			.menu-bar ul li {
+				margin: 15px;
+				padding: 15px;
+				width: 300px;
+				color: #fff;
+				font-family: arial;
+				cursor: pointer;
+			}
+			.sub-menu  {
+				display: none;
+			}
+			.sub-menu ul li{
+				color: #000;
+				text-align: left;
+			}
+			.menu-bar ul li:hover .sub-menu {
+				display: block;
+				position: absolute;
+				background: #F5F5F5;
+				margin-top: 15px;
+				margin-left: 70px;
+			}
+			.menu-bar ul li:hover .sub-menu ul {
+				display: block;
+				margin: 10px;
+			}
+			.menu-bar ul li:hover .sub-menu ul li {
+				width:250px;
+				padding: 5px;
+				border-bottom: 1px dotted #000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="menu-bar">
+			<ul>
+				<li>Industries
+				<div class="sub-menu">
+					<ul>
+						<li>Upstream</li>
+						<li>Midstream</li>
+						<li>Downstream</li>
+						<li>Chemicals</li>
+						<li>Heavy Equipment</li>
+						<li>Pharmaceuticals</li>
+					</ul>
+				</div>
+				</li>
+				<li>Learn
+				<div class="sub-menu">
+					<ul>
+						<li>Resorues</li>
+					</ul>
+				</div>
+				</li>
+				<li>Company
+				<div class="sub-menu">
+					<ul>
+						<li>People</li>
+						<li>Careers</li>
+						<li>News</li>
+						<li>Contact</li>
+					</ul>
+				</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

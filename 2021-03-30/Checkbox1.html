@@ -1,0 +1,54 @@
+<html>
+	<head>
+	 <title>checkbox</title>
+	 <style>
+		input[type=checkbox] + label {
+			display:block;
+			margin: 0.2em; 
+		}
+		input[type=checkbox] {
+			display: none;
+		}
+		input[type=checkbox] + label:before{
+			content:"\2714";
+			border: 1px solid #000;
+			border-radius: 0.2em;
+			display: inline-block;
+			width: 1em;
+			height: 1em;
+			padding-left: 0.2em;
+			padding-bottom: 0.3em;
+			margin-right: 0.2em;
+			vertical-align: bottom;
+			color:transparent;
+			cursor: pointer;
+		}
+		input[type=checkbox]:checked + label:before{
+			background-color: #4ab72e;
+			border-color: #4ab72e;
+			color: #fff;
+		}
+		//input[type=checkbox]:disabled + lable:before{
+			border-color: #aaa;
+
+		}
+		input[type=checkbox]:checked:disabled + label:before{
+			background-color: #bfb;
+			border-color: #bfb;
+			cursor: default;
+		}
+	 </style>
+	</head>
+	<body>
+		<form>
+			<input type="checkbox" id="fruit-1" name="fruit-1" value="Apple">
+				<label for="fruit-1">Apple</label>
+			<input type="checkbox" id="fruit-2" name="fruit-2" value="Banana">
+				<label for="fruit-2">Banana</label>
+			<input type="checkbox" id="fruit-3" name="fruit-3" value="Cherry" checked disabled>
+				<label for="fruit-3">Cherry</label>
+			<input type="checkbox" id="fruit-4" name="fruit-4" value="Straberry">
+				<label for="fruit-4">Straberry</label>
+		</form>
+	</body>
+</html>

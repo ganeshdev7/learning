@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<title>check nd Radio bg</title>
+		<style>
+			.checkbox {
+				display: none;
+			}
+			.check-label {
+				cursor: pointer;
+			}
+			.checkbox-row {
+				margin-bottom: 10px;
+			}
+			.check-label {
+				background: url('./check-1.png');
+				background-repeat: no-repeat;
+				background-size: 18px;
+				padding-left: 20px;
+			}
+			.checkbox:checked + .check-label {
+				background-image: url('./check-2.png');
+				background-size: 18px;
+			}
+			.checkbox:disabled + .check-label {
+				opacity: 0.4;
+				cursor: default;
+			}
+			.radio+.check-label {
+				background-image: url('./radio-1.png');
+			}
+			.radio:checked +.check-label {
+				background-image: url('./radio-2.png');
+			}
+		</style>
+	</head>
+		<body>
+			<div class="checkbox-row">
+				<input class="checkbox" id="check1" type="checkbox"  checked />
+				<label for="check1" class="check-label">
+					Checkbox
+				</label>
+			</div>
+			<div class="checkbox-row">
+				<input class="checkbox" id="check2" type="checkbox"  />
+				<label for="check2" class="check-label">
+					Checkbox
+				</label>
+			</div><div class="checkbox-row">
+				<input class="checkbox" id="check3" type="checkbox" disabled  />
+				<label for="check3" class="check-label">
+					Checkbox
+				</label>
+			</div><div class="checkbox-row">
+				<input class="checkbox" id="check4" type="checkbox"  />
+				<label for="check4" class="check-label">
+					Checkbox
+				</label>
+			</div>
+			<div class="checkbox-row">
+				<input class="checkbox radio" id="check5" type="radio" name="radio"  checked />
+				<label for="check5" class="check-label">
+					Radio
+				</label>
+			</div>
+			<div class="checkbox-row">
+				<input class="checkbox radio" id="check6" type="radio" name="radio"  />
+				<label for="check6" class="check-label">
+					Radio
+				</label>
+			</div><div class="checkbox-row">
+				<input class="checkbox radio" id="check7" type="radio"  name="radio" disabled  />
+				<label for="check7" class="check-label">
+					Radio
+				</label>
+			</div><div class="checkbox-row">
+				<input class="checkbox radio" id="check8" type="radio" name="radio" />
+				<label for="check8" class="check-label">
+					Radio
+				</label>
+			</div>
+
+		</body>
+</html>

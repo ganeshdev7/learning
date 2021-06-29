@@ -1,0 +1,7 @@
+:root {
+			  --primaryColor: #2098D1;
+			  --successColor: #2DBF64; 
+			  --infoColor: #44CCEB;
+			  --warningColor: #E8910D; 
+			  --dangerColor: #ED5650;
+			}

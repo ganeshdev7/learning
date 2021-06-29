@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Multi Modal popup with JS</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				background: #ccc;
+			}
+			.btn {
+				border: none;
+				padding: 10px;
+				background: #1381ef;
+				color: #fff;
+				font-size: 17px;
+				border-radius: 5px;
+				cursor: pointer;
+				display: flex;
+				margin-bottom: 20px;
+			}
+			.btn1 {
+				font-size: 17px;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				color: #fff;
+				background: #6a7177;
+				position: absolute;
+				left: 285px;
+				cursor: pointer;
+			}
+			.btn2 {
+				font-size: 17px;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				color: #fff;
+				background: #1381ef;
+				float: right;
+				margin-right: 10px;
+				cursor: pointer;
+			}
+			.btn3 {
+				font-size: 17px;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				color: #fff;
+				background: #6a7177;
+				cursor: pointer;
+			}
+			.close {
+				float: right;
+				font-weight: 600;
+				margin-right: 15px;
+				margin-top: 10px;
+				cursor: pointer;
+				color: #ccc;
+			}
+			.close:hover {
+				color: #000;
+			}
+			.modal {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				background-color: rgba(0,0,0,0.7);
+				top: 0;
+				left: 0;
+				display: none;
+				overflow: auto;
+			}
+			.modal-content1 {
+				width: 500px;
+				height: 200px;
+				background-color: #fff;
+				border-radius: 5px;
+				font-size: 17px;
+				font-family: 'Source Sans Pro', sans-serif;
+				position: absolute;
+				top: 40px;
+				right: 0;
+				left: 0;
+				margin: auto;
+				animation-name: animatetop;
+				animation-duration: 0.4s
+			}
+			.modal-content2 {
+				width: 500px;
+				height: 1720px;
+				background-color: #fff;
+				border-radius: 5px;
+				font-size: 17px;
+				font-family: 'Source Sans Pro', sans-serif;
+				position: absolute;
+				top: 40px;
+				right: 0;
+				left: 0;
+				margin: auto;
+				animation-name: animatescroll;
+				animation-duration: 0.4s
+			}
+			.modal-content3 {
+				width: 500px;
+				height: 245px;
+				background-color: #fff;
+				border-radius: 5px;
+				font-size: 17px;
+				font-family: 'Source Sans Pro', sans-serif;
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				margin: auto;
+				animation-name: animatetop;
+				animation-duration: 0.4s
+			}
+			.modal-content4 {
+				width: 500px;
+				height: 415px;
+				background-color: #fff;
+				border-radius: 5px;
+				font-size: 17px;
+				font-family: 'Source Sans Pro', sans-serif;
+				position: absolute;
+				top: 40px;
+				right: 0;
+				left: 0;
+				margin: auto;
+				animation-name: animatetop;
+				animation-duration: 0.4s
+			}
+			.modal-content5 {
+				width: 500px;
+				height: 600px;
+				background-color: #fff;
+				border-radius: 5px;
+				font-size: 17px;
+				font-family: 'Source Sans Pro', sans-serif;
+				position: absolute;
+				top: 40px;
+				right: 0;
+				left: 0;
+				margin: auto;
+				animation-name: animatetop;
+				animation-duration: 0.4s
+			}
+			@keyframes animatetop {
+			  from {top:-300px; opacity:0}
+			  to {top:0; opacity:1}
+			}
+			@keyframes animatescroll {
+			  from {top:-300px; opacity:0}
+			  to {top:0; opacity:1}
+			}
+			h3 {
+				border-bottom: 1px solid #ccc;
+				padding-bottom: 10px;
+				padding-left: 20px;
+			}
+			p {
+				border-bottom: 1px solid #ccc;
+				padding-bottom: 40px;
+				padding-left: 20px;
+			}
+			a {
+				text-decoration: none;
+			}	
+			h4 {
+				font-size: 20px;
+				margin-left: 20px;
+			}
+			.box1 {
+				border: 1px solid #000;
+				width: 150px;
+				height: 75px;
+				padding: 20px;
+				background: #dee0e1;
+				margin-left: 10px;
+			}
+			.row2 {
+				border: 1px solid #000;
+				width: 150px;
+				height: 75px;
+				padding: 20px;
+				background: #dee0e1;
+				float: right;
+				margin-right: -345px;
+				margin-top: -40px;
+			}
+			.box2 {
+				border: 1px solid #000;
+				width: 120px;
+				height: 125px;
+				padding: 20px;
+				background: #dee0e1;
+				margin-top: 20px;
+				margin-left: 135px;
+			}
+			.row4 {
+				border: 1px solid #000;
+				width: 75px;
+				height: 120px;
+				padding: 17px;
+				background: #dee0e1;
+				float: right;
+				margin-right: -255px;
+				margin-top: -55px;
+			}
+			.box3 {
+				border: 1px solid #000;
+				width: 235px;
+				height: 50px;
+				padding: 17px;
+				background: #dee0e1;
+				margin-left: 255px;
+				margin-top: 20px;
+			}
+			.box4 {
+				border: 1px solid #000;
+				width: 352px;
+				height: 125px;
+				padding: 20px;
+				background: #dee0e1;
+				margin-top: 20px;
+				margin-left: 10px;
+				margin-bottom: 30px;
+			}
+			.row7 {
+				border: 1px solid #000;
+				background: #7c7c7d;
+				width: 175px;
+				height: 75px;
+				padding: 15px;
+				margin-left: -20px;
+			}
+			.row8 {
+				border: 1px solid #000;
+				background: #7c7c7d;
+				width: 175px;
+				height: 75px;
+				padding: 15px;
+				float: right;
+				margin-top: -75px;
+				margin-right: -20px;
+			}
+		</style>
+	</head>
+	<body>
+		<button class="btn" id="myBtn1">Launch demo modal</button>
+		<div class="modal" id="myModal1">
+			<div class="modal-content1">
+				<span class="close">X</span>
+				<h3>Modal title</h3>
+				<p>Woohoo, you're reading this text in a modal!</p>
+				<button class="btn1">Close</button>
+				<button class="btn2">Save Changes</button>
+			</div>
+		</div>
+		<button class="btn" id="myBtn2">Launch demo modal</button>
+		<div class="modal" id="myModal2">
+			<div class="modal-content2">
+				<span class="close">X</span>
+				<h3>Modal title</h3>
+				<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.<br /><br />
+				Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.<br /><br />
+				Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</br><br />
+				Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</br><br />
+				Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</br><br />
+				Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</br><br />		
+				Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</br><br />
+				Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</br><br />
+				Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</br><br />
+				Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</br><br />
+				Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</br><br />
+				Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</br>	<br />				
+				Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</br><br />
+				Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</br><br />
+				Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</br><br />
+				Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</br><br />
+				Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</br><br />
+				Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+				<button class="btn1">Close</button>
+				<button class="btn2">Save Changes</button>
+			</div>
+		</div>
+		<button class="btn" id="myBtn3">Launch demo modal</button>
+		<div class="modal" id="myModal3">
+			<div class="modal-content3">
+				<span class="close">X</span>
+				<h3>Modal title</h3>
+				<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+				<button class="btn1">Close</button>
+				<button class="btn2">Save Changes</button>
+			</div>
+		</div>
+		<button class="btn" id="myBtn4">Launch demo modal</button>
+		<div class="modal" id="myModal4">
+			<div class="modal-content4">
+				<span class="close">X</span>
+				<h3>Modal title</h3>
+				<h4>Popover in a modal</h4>
+				<p>This <button class="btn3">button</button> triggers a popover on click.</p>
+				<h4>Tooltips in a modal</h4>
+				<p><a href="#" title="Tooltip">This link</a> and <a href="#" title="Tooltip">that link</a> have tooltips on hover.</p>
+				<button class="btn1">Close</button>
+				<button class="btn2">Save Changes</button>
+			</div>
+		</div>
+		<button class="btn" id="myBtn5">Launch demo modal</button>
+		<div class="modal" id="myModal5">
+			<div class="modal-content5">
+				<span class="close">X</span>
+				<h3>Grids in modals</h3>
+				<div class="box1">
+					<div class="row1">.col-md-4</div>
+					<div class="row2">.col-md-4 .ml-auto</div>
+				</div>
+				<div class="box2">
+					<div class="row3">.col-md-3 .ml-auto</div>
+					<div class="row4">.col-md-2 .ml-auto</div>
+				</div>
+				<div class="box3">
+					<div class="row5">.col-md-6 .ml-auto</div>
+				</div>
+				<div class="box4">
+					<div class="row6">
+						Level 1: .col-sm-9
+						<div class="row7">Level 2: .col-8 .col-sm-6</div>
+						<div class="row8">Level 2: .col-4 .col-sm-6</div>
+					</div>
+				</div>
+				<hr />
+				<button class="btn1">Close</button>
+				<button class="btn2">Save Changes</button>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var datamap = new Map([
+				[document.getElementById("myBtn1"), document.getElementById("myModal1")],
+				[document.getElementById("myBtn2"), document.getElementById("myModal2")],
+				[document.getElementById("myBtn3"), document.getElementById("myModal3")],
+				[document.getElementById("myBtn4"), document.getElementById("myModal4")],
+				[document.getElementById("myBtn5"), document.getElementById("myModal5")]
+			]);
+			datamap.forEach((value, key) => {
+				doModal(key, value);
+			});
+			function doModal(anchor, popupbox) {
+				var span = popupbox.getElementsByClassName("close")[0];
+				var btn = popupbox.getElementsByClassName("btn1")[0];
+				
+				anchor.addEventListener("click", function (event) {
+					popupbox.style.display = "block";
+				});
+				
+				span.addEventListener("click", function (event) {
+					popupbox.style.display = "none";
+				});
+				
+				btn.addEventListener("click", function (event) {
+					popupbox.style.display = "none";
+				});
+				
+				window.addEventListener("click", function (event) {
+					if (event.target == popupbox) {
+						popupbox.style.display = "none";
+					}
+				});
+			}
+		</script>
+	</body>
+</html>

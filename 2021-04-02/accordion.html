@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Accordion</title>
+		<style>
+			.accordion {
+				margin: 0 auto;
+				width: 900px;
+			}
+			.accordion1 {
+				font-family: arial;
+				color: #1F80D0;
+				font-weight:700;
+				border: 1px solid #aaa;
+				border-radius: 5px;
+				background: #F7F7F9;
+				font-size: 30px;
+				padding: 15px;
+			}
+			.accordion-content {
+				padding:20px;
+				display: none;
+				border: 1px solid #ccc;
+				border-bottom: none;
+				border-top: none;
+				}
+			.checkbox {
+				display: none;
+			}
+			.checkbox:checked +.label + .accordion1 {
+				border-radius: 5px 5px 0px 0px;
+			}
+			.checkbox:checked +.label + .accordion1 +.accordion-content {
+				display: inline-block;
+				border-bottom: 1px solid #ccc;
+				border-radius:0px 0px 5px 5px;
+			}
+			.plus {
+				color: #1F80D0;
+				font-weight:700;
+				font-size: 30px;
+				font-family: arial;
+				float: right;
+				margin-right: 20px;
+				margin-top: 20px;
+				cursor: pointer;
+			}
+			.minus {
+				color: #1F80D0;
+				font-weight:700;
+				font-size: 30px;
+				font-family: arial;
+				float: right;
+				margin-right: 20px;
+				margin-top: 20px;
+				cursor: pointer;
+			}
+			.minus {
+				display: none;
+			}
+			.checkbox:checked +.label .minus {
+				display: inline-block;
+			}
+			.checkbox:checked +.label .plus {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="accordion">
+			<input class="checkbox" id="check" type="checkbox"/>
+			<label for="check" class="label">
+				<span class="plus">+</span>
+				<span class="minus">-</span>
+			</label>
+			<div class="accordion1">Collapsible Group Item #1</div>
+			<div class="accordion-content">
+				Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+				Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+				Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+				Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+			</div>
+			<input class="checkbox" id="check1" type="checkbox"/>
+			<label for="check1" class="label">
+				<span class="plus">+</span>
+				<span class="minus">-</span>
+			</label>
+			<div class="accordion1">Collapsible Group Item #2</div>
+			<div class="accordion-content">
+				Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+				Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+				Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+				Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+			</div>
+			<input class="checkbox" id="check2" type="checkbox"/>
+			<label for="check2" class="label">
+				<span class="plus">+</span>
+				<span class="minus">-</span>
+			</label>
+			<div class="accordion1">Collapsible Group Item #3 </div>
+			<div class="accordion-content">
+				Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+				Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+				Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+				Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+			</div>
+		</div>
+	</body>
+</html>

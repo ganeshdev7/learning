@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			.checkbox-row {
+				margin-bottom: 10px;
+			}
+			.check-label {
+				cursor: pointer;
+			}
+			.checkbox {
+				display: none;
+			}
+			.checkbox:disabled +.check-label {
+				opacity: 0.4;
+				cursor: default;
+			}
+			.check-label {
+				background: url(./check-1.png);
+				background-size: 16px;
+				background-repeat: no-repeat;
+				padding-left: 25px;
+			}
+			.checkbox:checked+.check-label {
+				background-image: url('./check-2.png');
+				background-size: 18px;
+			}
+			.radio+.check-label {
+				background-image: url('./radio-1.png');
+			}
+			.radio:checked+.check-label {
+				background-image: url('./radio-2.png');
+			}
+		</style>
+	</head>
+	<body>
+		<div class="checkbox-row">
+			<input class="checkbox" id="check1" type="checkbox" checked />
+			<label for="check1" class="check-label">
+				Check1
+			</label>
+		</div>
+		<div class="checkbox-row">
+			<input class="checkbox" id="check2" type="checkbox" disabled />
+			<label for="check2" class="check-label">
+				Check2
+			</label>
+		</div>
+		<div class="checkbox-row">
+			<input class="checkbox" id="check3" type="checkbox" />
+			<label for="check3" class="check-label">
+				Check3
+			</label>
+		</div>
+		<div class="checkbox-row">
+			<input name="r" class="checkbox radio" id="radio1" type="radio" checked />
+			<label for="radio1" class="check-label">
+				radio1
+			</label>
+		</div>
+		<div class="checkbox-row">
+			<input name="r" class="checkbox radio" id="radio2" type="radio" disabled />
+			<label for="radio2" class="check-label">
+				radio2
+			</label>
+		</div>
+		<div class="checkbox-row">
+			<input name="r" class="checkbox radio" id="r3" type="radio" />
+			<label for="r3" class="check-label">
+				radio3
+			</label>
+		</div>
+	</body>
+</html>

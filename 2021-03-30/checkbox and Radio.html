@@ -1,0 +1,106 @@
+<!document html>
+<html>
+<head>
+	<title>Checkbox and Radio</title>
+		<style>
+			.custom-checkbox {
+				margin-bottom: 10px;
+			}
+			.custom-radio {
+				margin-bottom: 10px;
+			}
+			.checkbox {
+				display: none;
+			}
+			.custom-checkbox .check-img-checked {
+				display: none;
+			}
+			.check-img {
+				display: inline-block;
+				height: 20px;
+				vertical-align: middle;
+				margin-top: -2px;
+			}
+			.checkbox:checked + .check-label .check-img	{
+				display: none;
+			}
+			.checkbox:checked + .check-label .check-img-checked{
+				display: inline-block;
+			}
+			.check-label {
+				cursor: pointer;
+			}
+			.checkbox:disabled + .check-label {
+				opacity: 0.5;
+				cursor: default;
+			}
+			.custom-radio .check-img-checked {
+				display: none;
+			}
+		</style>
+</head>
+	<body>
+		<div class="custom-checkbox">
+			<input class="checkbox" id="check" type="checkbox" checked />
+			<label for="check" class="check-label">
+				<img src="./check-1.png" class="check-img" />
+				<img src="./check-2.png" class="check-img check-img-checked" />
+				Checkbox
+			</label>
+		</div>
+		<div class="custom-checkbox">
+			<input class="checkbox" id="check1" type="checkbox"  />
+			<label for="check1" class="check-label">
+				<img src="./check-1.png" class="check-img" />
+				<img src="./check-2.png" class="check-img check-img-checked" />
+				Checkbox
+			</label>
+		</div>
+		<div class="custom-checkbox">
+			<input class="checkbox" id="check2" type="checkbox" disabled />
+			<label for="check2" class="check-label">
+				<img src="./check-1.png" class="check-img" />
+				<img src="./check-2.png" class="check-img check-img-checked" />
+				Checkbox
+			</label>
+		</div>
+		<div class="custom-checkbox">
+			<input class="checkbox" id="check3" type="checkbox" />
+			<label for="check3" class="check-label">
+				<img src="./check-1.png" class="check-img" />
+				<img src="./check-2.png" class="check-img check-img-checked" />
+				Checkbox
+			</label>
+		</div>
+		<div class="custom-radio">
+			<input class="checkbox" id="check4" type="radio" name="radio" checked />
+			<label for="check4" class="check-label">
+				<img src="./radio-1.png" class="check-img" />
+				<img src="./radio-2.png" class="check-img check-img-checked" />
+				Radio
+			</label>
+		</div>
+		<div class="custom-radio">
+			<input class="checkbox" id="check5" type="radio" name="radio" />
+			<label for="check5" class="check-label">
+				<img src="./radio-1.png" class="check-img" />
+				<img src="./radio-2.png" class="check-img check-img-checked" />
+				Radio
+			</label>
+		</div><div class="custom-radio">
+			<input class="checkbox" id="check6" type="radio" name="radio" disabled />
+			<label for="check6" class="check-label">
+				<img src="./radio-1.png" class="check-img" />
+				<img src="./radio-2.png" class="check-img check-img-checked" />
+				Radio
+			</label>
+		</div><div class="custom-radio">
+			<input class="checkbox" id="check7" type="radio" name="radio"  />
+			<label for="check7" class="check-label">
+				<img src="./radio-1.png" class="check-img" />
+				<img src="./radio-2.png" class="check-img check-img-checked" />
+				Radio
+			</label>
+		</div>
+	</body>
+</html>

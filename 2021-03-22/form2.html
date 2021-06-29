@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>Form</title>
+	<style>
+		.form {
+			width: 300px;
+			// border: 1px solid #ccc;
+		}
+		.input-wrapper .input {
+			width: 100%;
+		}
+		.input-wrapper {
+			margin-bottom: 20px;
+		}
+		.submit input {
+			background: #fff;
+			border-radius: 50px;
+			border: 1px solid #ccc;
+			padding: 5px 20px;
+			cursor: pointer;
+		}
+		.head {
+			font-size: 30px;
+			font-weight: 700;
+			margin-bottom: 20px
+		}
+		.form1 {
+			overflow: auto;
+		}
+		.form1 .first{
+			width: 45%;
+			float: left;
+		}
+		.form1 .last{
+			width: 45%;
+			float: right;
+		}
+		.star {
+			color: red;
+			margin-left: 5px;
+			
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="form">
+		<div class="head">
+			Contact
+		</div>
+		<div class="form1">
+			<div class="input-wrapper first">
+				<label>FirstName</label><span class="star">*</span>
+				<input class="input" type="text">
+			</div>
+			<div class="input-wrapper last">
+				<label>Last Name</label><span class="star">*</span>
+				<input class="input" type="text">
+			</div>
+		</div>
+		<div class="input-wrapper mail">
+			<label>Your e-mail address</label><span class="star">*</span>
+			<input class="input" type="text">
+		</div>
+		<div class="input-wrapper sub">
+			<label>Subject</label><span class="star">*</span>
+			<input class="input" type="text">
+		</div>
+		<div class="input-wrapper msg">
+			<label>Message</label><span class="star">*</span>
+			<textarea class="input" type="message" rows="9" cols="55"></textarea>
+		</div>
+		<div class="submit">
+			<input type="button" value="Send message">
+		</div>
+	</div>
+</body>
+</html>

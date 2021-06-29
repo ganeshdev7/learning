@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title>Form</title>
+	<style>
+	*{
+	   margin: 0px;
+	}
+	.form{
+		background-color: white;
+		width: 422px;
+		height: 411px;
+		border: 1px solid black;
+	}
+	.head{
+		margin-top: 5px;
+		padding-left: 5px;
+		font-size: 25px;
+	}
+	.form1{
+		margin: 5px 0px 0px 5px;
+	}
+	sup{
+		color: red;
+	}
+	.first{
+		float: left;
+	}
+	.last{
+		padding-right: 20px; 
+		float: right;
+	}
+	.mail{
+		margin: 0px 5px 0px 5px;
+		padding-top: 60px;
+	}
+	.email{
+		width: 100%;
+	}
+	.sub{
+		margin: 0px 5px 0px 5px;
+		padding-top: 15px;
+	}
+	.subject{
+		width: 100%;
+	}
+	.msg{
+		width: 40%;
+		margin-left: 5px;
+		padding-top: 10px;
+	}
+	.submit{
+		margin: 5px 0px 0px 5px;
+		
+	}
+	</style>
+</head>
+<body>
+	<div class="form">
+		<div class="head">
+			Contact
+		</div>
+		<div class="form1">
+			<div class="first">
+				<label>FirstName</label><sup>*</sup><br />
+				<input type="text">
+			</div>
+			<div class="last">
+				<label>Last Name</label><sup>*</sup><br />
+				<input type="text">
+			</div>
+		</div>
+		<div class="mail">
+			<label>Your e-mail address</label><sup>*</sup><br />
+			<input type="text" class="email">
+		</div>
+		<div class="sub">
+			<label>Subject</label><sup>*</sup><br />
+			<input type="text" class="subject">
+		</div>
+		<div class="msg">
+			<label>Message</label><sup>*</sup><br />
+			<textarea type="message" rows="9" cols="55"></textarea>
+		</div>
+		<div class="submit">
+			<input type="button" value="Send message">
+		</div>
+	</div>
+</body>
+</html>

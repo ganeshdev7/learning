@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title>Checkbox</title>
+			<style>
+				.checkbox {
+					//border: 1px solid #000;
+					//border-radius: 5px;
+					width: 50px;
+					height: 50px;
+					display: inline-block;
+					vertical-align: middle;
+				}
+				.content img{
+					margin-left: -15px;
+					margin-top: -3px;
+					width: 70px;
+					height: 60px;
+				}
+				.content1 img{
+					margin-left: -14px;
+					margin-top: -10px;
+					width: 70px;
+					height: 70px;
+				}
+				.custom-checkbox {
+					margin: 10px;
+				}
+				.text {
+					font-size: 30px;
+					display: inline-block;
+					vertical-align: middle;
+				}
+				label {
+					cursor: pointer;
+				}
+				input[type=checkbox] + label .content{
+					display: none;
+				}
+				input[type=checkbox]:checked + label .content{
+					display: inline-block;
+				}
+				input[type=checkbox]:disabled + label {
+					opacity: 0.5;
+					cursor: default;
+				}
+				input[type=checkbox] {
+					display: none;
+				}
+				input[type=checkbox]:checked + label .content1{
+					display: none;
+				}
+			</style>
+	</head>
+	<body>
+		<div class="custom-checkbox">
+			<input type="checkbox" id="first" />
+			<label for="first">
+				<div class="checkbox">
+					<span class="content1">
+						<img src="./check-1.png" />
+					</span>
+					<span class="content">
+						<img src="./check-2.png" />
+					</span>
+				</div>
+				<div class="text">Checkbox</div>
+			</label>
+		</div>
+		<div class="custom-checkbox">
+			<input type="checkbox" id="sec"/>
+			<label for="sec" >
+				<div class="checkbox">
+					<span class="content1">
+						<img src="./check-1.png" />
+					</span>
+					<span class="content">
+						<img src="./check-2.png" />
+					</span>
+				</div>
+				<div class="text">Checkbox</div>
+			</label>
+		</div>
+		<div class="custom-checkbox">
+			<input type="checkbox" id="third" disabled>
+			<label for="third" >
+				<div class="checkbox">
+					<span class="content1">
+						<img src="./check-1.png" />
+					</span>
+					<span class="content">	
+						<img src="./check-2.png" />
+					</span>
+				</div>
+				<div class="text">Checkbox</div>
+			</label>
+		</div>
+		<div class="custom-checkbox">
+			<input type="checkbox" id="four"/>
+			<label for="four" >
+				<div class="checkbox">
+					<span class="content1">
+						<img src="./check-1.png" />
+					</span>
+					<span class="content">	
+						<img src="./check-2.png" />
+					</span>
+				</div>
+				<div class="text">Checkbox</div>
+			</label>
+		</div>
+		
+	</body>
+</html>

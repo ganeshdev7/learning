@@ -1,0 +1,132 @@
+<!doctype  html>
+<html>
+	<head>
+		<title>Carousel</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	</head>
+		<style>
+			.slide-show {
+				width: 820px;
+				height: 360px;
+				overflow: hidden;
+			}
+			.middle {
+				position: absolute;
+				top: 20%;
+				left: 20%;
+			}
+			.slide-bars {
+				position: absolute;
+				bottom: 20px;
+				display: flex;
+				left: 41%;
+				padding: 5px;
+			}
+			.box {
+				width: 35px;
+				height: 3px;
+				background: #978F8B;				
+				margin: 3px;
+				cursor: pointer;
+			}
+			.box:active {
+				background: #FFFFFF;
+			}
+			.slides {
+				width: 700%;
+				display: flex;
+			}
+			.slide {
+				width: 15%;
+			}
+			.slide img {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+			.input {
+				display: none;
+			}
+			#r1:checked  {
+				
+			}
+			#r2:checked	{
+				
+			}
+			#r3:checked  {
+				
+			}
+			.text {
+				text-align: center;
+				position: relative;
+				left: -4%;
+				top: 260%;
+				font-family: 'Roboto', sans-serif;
+				font-size: 16px;
+				color: #fff;
+			}
+			h3 {
+				margin-bottom: -5px;
+			}
+			.txt {
+				position: absolute;
+				bottom: 150px;
+				right: 420px;
+				color: #fff;
+				font-size: 40px;
+				font-weight: 700;
+				font-family: 'Roboto', sans-serif;
+				cursor: pointer;
+			}
+			.txt1{
+				position: absolute;
+				bottom: 150px;
+				left: 420px;
+				color: #fff;
+				font-size: 40px;
+				font-weight: 700;
+				font-family: 'Roboto', sans-serif;
+				cursor: pointer;
+			}
+		</style>
+	<body>
+		<div class="slide-show middle">
+			<div class="slides">
+				<input type="radio" name="radio" id="r1" class="input" />
+				<input type="radio" name="radio" id="r2" class="input" />
+				<input type="radio" name="radio" id="r3" class="input" />
+				<input type="radio" name="radio" id="r4" class="input" />
+				<input type="radio" name="radio" id="r5" class="input" />
+				<div class="slide">
+					<img src=".\img 1.jpg" class="img1" >
+					<div class="text">
+						<h3>First slide label</h3>
+						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src=".\img 2.jpg" class="img2">
+					<div class="text">
+						<h3>Second slide label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src=".\img 3.jpg" class="img3">
+					<div class="text">
+						<h3>Third slide label</h3>
+						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+					</div>
+				</div>
+			</div>
+			<div class="slide-bars">
+				<label for="r1" class="box"></label>
+				<label for="r2" class="box"></label>
+				<label for="r3" class="box"></label>
+				<label for="r4" class="txt"><</label>
+				<label for="r5" class="txt1">></label>
+			</div>
+		</div>
+	</body>
+</html>

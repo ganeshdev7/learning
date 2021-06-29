@@ -1,0 +1,116 @@
+<html>
+	<head>
+		<title>Button</title>
+		<style>
+			:root {
+			  --primaryColor: #2098D1;
+			  --successColor: #2DBF64; 
+			  --infoColor: #44CCEB;
+			  --warningColor: #E8910D; 
+			  --dangerColor: #ED5650;
+			}
+
+			.container {
+				background: #FFFFCE;
+				padding: 30px 50px;
+				max-width: 600px;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.row {
+				margin-top: 20px;
+			}
+			.row:first-child {
+				margin-top: 0;
+			}
+			.btn {
+				padding: 10px 15px;
+				margin: 1px;
+				text-transform: uppercase;
+				color: #fff;
+				font-weight: bold;
+				border: 1px solid;
+			}
+			.btn-primary {
+				background: var(--primaryColor);
+				border: 1px solid var(--primaryColor);
+			}
+			.btn-success {
+				background: var(--successColor);
+				border-color: var(--successColor);
+			}
+			.btn-info {
+				background: var(--infoColor);
+				border: 1px solid var(--infoColor);
+			}
+			.btn-warning {
+				background: var(--warningColor);
+				border: 1px solid var(--warningColor);
+			}
+			.btn-danger {
+				background: var(--dangerColor);
+				border: 1px solid var(--dangerColor);
+			}
+			.btn-type2 {
+				border-radius: 100px
+			}
+			.btn-type3 {
+				border-radius: 5px;
+				box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+			}
+			.btn-inverse {
+				background: none;
+			}
+			.btn-primary.btn-inverse {
+				color: var(--primaryColor);
+			}
+			.btn-success.btn-inverse {
+				color: var(--successColor);
+			}
+			.btn-info.btn-inverse {
+				color: var(--infoColor);
+			}
+			.btn-warning.btn-inverse {
+				color: var(--warningColor);
+			}
+			.btn-danger.btn-inverse {
+				color: var(--dangerColor);
+			}
+			.btn-type1 {
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<button class="btn btn-primary">Primary</button>
+				<button class="btn btn-success">Success</button>
+				<button class="btn btn-info">Info</button>
+				<button class="btn btn-warning">Warning</button>
+				<button class="btn btn-danger">Danger</button>
+			</div>
+			<div class="row">
+				<button class="btn btn-primary btn-inverse btn-type1">Primary</button>
+				<button class="btn btn-success btn-inverse btn-type1">Success</button>
+				<button class="btn btn-info btn-inverse btn-type1">Info</button>
+				<button class="btn btn-warning btn-inverse btn-type1">Warning</button>
+				<button class="btn btn-danger btn-inverse btn-type1">Danger</button>
+			</div>
+			<div class="row">
+				<button class="btn btn-primary btn-type2">Primary</button>
+				<button class="btn btn-success btn-type2">Success</button>
+				<button class="btn btn-info btn-type2">Info</button>
+				<button class="btn btn-warning btn-type2">Warning</button>
+				<button class="btn btn-danger btn-type2">Danger</button>
+			</div>
+			<div class="row">
+				<button class="btn btn-primary btn-type3">Primary</button>
+				<button class="btn btn-success btn-type3">Success</button>
+				<button class="btn btn-info btn-type3">Info</button>
+				<button class="btn btn-warning btn-type3">Warning</button>
+				<button class="btn btn-danger btn-type3">Danger</button>
+			</div>
+		</div>
+	</body>
+</html>

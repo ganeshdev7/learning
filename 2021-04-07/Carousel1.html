@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Carousel</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			.c {
+				height: 250px;
+				width: 70%;
+				position: relative;
+				margin: 0 auto;
+			}
+			[name="c"] {
+				display: none;
+			}
+			.s {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				opacity: 0;
+				transition: 1s all ease-in;
+			}
+			.a {
+				position: absolute;
+				top: calc(50% - 15px);
+				left: 10px;
+				cursor: pointer;
+				height: 30px;
+				width: 30px;
+				color: #fff;
+				text-align: center;
+				border: 1px solid #fff;
+				line-height: 30px;
+			}
+			.a-r {
+				left: auto;
+				right: 10px;
+			}
+			.s img{
+				width: 100%;
+				height: 100%;
+			}
+			input:checked+.s {
+				opacity: 1;
+				z-index: 1;
+				transition: 1s all ease-in;
+			}
+			h4 {
+				margin-bottom: -3px;
+			}
+			.s-t {
+				position: absolute;
+				left: 0;
+				right: 0;
+				text-align: center;
+				bottom: 30px;
+				color: #fff;
+				font-family: 'Roboto', sans-serif;
+				font-size: 10px;
+			}
+			.slide-bars {
+				position: absolute;
+				bottom: 10px;
+				display: flex;
+				left: 40%;
+				padding: 5px;
+				z-index: 1;
+			}
+			.box {
+				width: 20px;
+				height: 2px;
+				margin: 3px;
+				background:  #978F8B;
+				cursor: pointer;
+			}
+			.box:active {
+				background: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="c">
+			<div>
+				<input id="s1" type="radio" name="c" checked />
+				<div class="s">
+					<img src=".\img 1.jpg"  >
+					<div class="s-t">
+						<h4>First slide label</h4>
+						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+					</div>
+					<label for="s3" class="a a-l"><</label>
+					<label for="s2" class="a a-r">></label>
+				</div>
+			</div>
+			<div>
+				<input id="s2" type="radio" name="c" />
+				<div class="s">
+					<img src=".\img 2.jpg"  >
+					<div class="s-t">
+						<h4>Second slide label</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<label for="s1" class="a a-l"><</label>
+					<label for="s3" class="a a-r">></label>
+				</div>
+			</div>
+			<div>
+				<input id="s3" type="radio" name="c" />
+				<div class="s">
+					<img src=".\img 3.jpg" >
+					<div class="s-t">
+						<h4>Third slide label</h4>
+						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+					</div>
+					<label for="s2" class="a a-l"><</label>
+					<label for="s1" class="a a-r">></label>
+				</div>
+			</div>
+			<div class="slide-bars">
+				<label for="s1" class="box"></label>
+				<label for="s2" class="box"></label>
+				<label for="s3" class="box"></label>
+			</div>
+		</div>
+	</body>
+</html>

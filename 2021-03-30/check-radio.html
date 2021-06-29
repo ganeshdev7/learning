@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			.checkbox-row {
+				margin-bottom: 10px;
+			}
+			.checkbox-row .check-img-checked{
+				display: none;
+			}
+			.check-img {
+				display: inline-block;
+				height: 25px;
+				margin-top: -2px;
+				vertical-align: middle;
+			}
+			.check-label {
+				cursor: pointer;
+			}
+			.checkbox {
+				display: none;
+			}
+			.checkbox:checked+.check-label .check-img{
+				display: none;
+			}
+			.checkbox:checked+.check-label .check-img-checked{
+				display: inline-block;
+			}
+			.checkbox:disabled +.check-label {
+				opacity: 0.4;
+				cursor: default;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="checkbox-row">
+			<input class="checkbox" id="check1" type="checkbox" checked />
+			<label for="check1" class="check-label">
+				<img src="./check-1.png" class="check-img" />
+				<img src="./check-2.png" class="check-img check-img-checked" />
+				Check1
+			</label>
+		</div>
+		<div class="checkbox-row">
+			<input class="checkbox" id="check2" type="checkbox" disabled />
+			<label for="check2" class="check-label">
+				<img src="./check-1.png" class="check-img" />
+				<img src="./check-2.png" class="check-img check-img-checked" />
+				Check2
+			</label>
+		</div>
+		<div class="checkbox-row">
+			<input class="checkbox" id="check3" type="checkbox" />
+			<label for="check3" class="check-label">
+				<img src="./check-1.png" class="check-img" />
+				<img src="./check-2.png" class="check-img check-img-checked" />
+				Check3
+			</label>
+		</div>
+	</body>
+</html>

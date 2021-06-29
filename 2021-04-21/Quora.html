@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quora</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+				background-image: url('./bg-img.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+			}
+			.bg {
+				background-color: #FFFFFF;
+				width: 700px;
+				height: 548px;
+				margin: 0 auto;
+				margin-top: 25px;
+				border-radius: 5px;
+			}
+			.img {
+				text-align: center;
+				padding-top: 35px;
+			}
+			.txt {
+				text-align: center;
+				font-weight: 700;
+				font-size: 15px;
+				color: #636466;
+				margin-bottom: 50px;
+			}
+			.left {
+				float: left;
+				border-right: 1px solid #dee0e1;
+				padding-right: 24px;
+				padding-left: 24px;
+				height: 250px;
+			}
+			.btn {
+				border: 1px solid #DEE0E1;
+				padding: 8px;
+				width: 300px;
+				background-color: #FFFFFF;
+				margin-bottom: 5px;
+				text-align: left;
+				font-size: 15px;
+				cursor: pointer;
+				border-radius: 3px;
+				line-height: 27px;
+			}
+			.btn img {
+				width: 28px;
+				vertical-align: middle;
+			}
+			.btn:hover {
+				background: #F7F7F7;
+			}
+			.btn5 {
+				border:none;
+				background: none;
+				margin-top: 10px;
+				font-size: 13px;
+				font-weight: 600;
+				color: #636466;
+				width: 300px;
+				padding: 8px;
+				cursor: pointer;
+			}
+			.btn5:hover {
+				background: #F7F7F7;
+				border-radius: 50px;
+			}
+			.line {
+				border-bottom: 1px solid #dee0e1;
+				padding-top: 10px;
+			}
+			.txt1 {
+				width: 300px;
+				font-size: 13px;
+				color: #939598;
+				margin-top: 10px;
+			}
+			.txt1 a{
+				color: #939598;
+			}
+			.txt6 {
+				font-size: 15px;
+				border-bottom: 1px solid #dee0e1;
+				padding-bottom: 10px;
+				font-weight: 500;
+			}
+			.box {
+				border: 1px solid #D3D3D3;
+				margin-bottom: 16px;
+				height: 74px;
+				width: 300px;
+				border-radius: 3px;
+			}
+			.name {
+				margin-top: 15px;
+			}
+			.btn4 {
+				border: none;
+				background-color: #97b4ff;
+				padding: 10px 20px;
+				border-radius: 50px;
+				color: #FFFFFF;
+				font-size: 15px;
+				font-weight: 600;
+				margin-left: 200px;
+			}
+			.txt7 {
+				width: 300px;
+				font-size: 13px;
+				color: #939598;
+			}
+			.txt7 a{
+				color: #939598;
+			}
+			
+			
+			.right {
+				float: right;
+				padding-right: 24px;
+				padding-left: 24px;
+				width: 350px;
+			}
+			.txt2 {
+				font-size: 15px;
+				border-bottom: 1px solid #dee0e1;
+				padding-bottom: 10px;
+				font-weight: 500;
+			}
+			.email {
+				margin-top: 16px;
+				margin-bottom: 15px;
+			}
+			.password {
+				margin-bottom: 16px;
+			}
+			label {
+				font-size: 13px;
+				font-weight: 700;
+			}
+			.input-wrapper:hover {
+				border-color: #2E69FF;
+			}
+			.input-wrapper {
+				width: 100%;
+				padding: 8px;
+				margin-top: 5px;
+				border: 1px solid #DEE0E1;
+				font-size: 15px;
+				border-radius: 3px;
+				line-height: 27px;
+			}
+			.txt3 a {
+				color: #939598;
+				font-size: 13px;
+				text-decoration: none;
+			}
+			.txt3 a:hover {
+				text-decoration: underline;
+			}
+			.btn3 {
+				float: right;
+				border: none;
+				background-color: #97b4ff;
+				padding: 10px 20px;
+				border-radius: 50px;
+				color: #FFFFFF;
+				font-size: 15px;
+				font-weight: 600;
+				margin-bottom: 32px;
+			}
+			.txt4 {
+				clear: both;
+				text-align: center;
+				border-top: 1px solid #DEE0E1;
+				padding: 16px;
+				font-size: 13px;
+			}
+			.txt4 a {
+				text-decoration: none;
+				padding-left: 5px;
+				color: #19A1D6;
+			}
+			.txt4 a:hover {
+				text-decoration: underline;
+			}
+			.footer {
+				text-align: center;
+				font-size: 13px;
+				border-top: 1px solid #DEE0E1;
+				background: #F1F2F2;
+				padding: 16px;
+				border-radius: 0 0 3px 3px;
+			}
+			.footer a {
+				text-decoration: none;
+				color: #939598;
+			}
+			.footer a:hover {
+				text-decoration: underline;
+			}
+			.left1 {
+				float: left;
+				border-right: 1px solid #dee0e1;
+				padding-right: 24px;
+				padding-left: 24px;
+				position: absolute;
+			}
+			.arr {
+				font-size: 15px;
+				margin-left: 5px;
+				font-weight: 800;
+				color: #aaa;
+			}
+			.sign-up {
+				display: none;
+			}
+		</style>
+		<script type="text/javascript">
+			function fn1()
+			{
+				document.getElementById('btn').style.display='inline-block';
+			}
+		</script>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="img">
+				<img src="./header.png">
+			</div>
+			<div class="txt">
+				A place to share knowledge and better understand the world
+			</div>
+			<div class="left">
+				<div>
+					<button class="btn">
+						<img src="./google.png" />
+						Continue with Google
+					</button>
+				</div>
+				<div>
+					<button class="btn">
+						<img src="./fb.png" />
+						Continue with Facebook
+					</button>
+				</div>
+				<div class="txt5"> 
+					<button class="btn5" onclick="fn1()">Sign up with email</button>
+				</div>
+				<div class="line">
+				</div>
+				<div class="txt1">
+					By continuing you indicate that you agree to Quora’s <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+				</div>
+			</div>
+			<div class="left1">
+				<div class="sign-up" id="btn">
+					<div class="txt6">
+						Sign up
+					</div>
+					<div class="name">
+						<label>Name</label>
+						<input type="text" placeholder="What would you like to be called?" class="input-wrapper"/>
+					</div>
+					<div class="email">
+						<label>Email</label>
+						<input type="text" placeholder="Your email" class="input-wrapper"/>
+					</div>
+					<div class="password">
+						<label>Password</label>
+						<input type="password" placeholder="Your password" class="input-wrapper"/>
+					</div>
+					<div class="box">
+					</div>
+					<div>
+						<button class="btn4">Sign UP</button>
+					</div>
+					<div class="txt7">
+						By continuing you indicate that you agree to Quora’s <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="txt2">
+					Login
+				</div>
+				<div class="email">
+					<label>Email</label>
+					<input type="text" placeholder="Your email" class="input-wrapper"/>
+				</div>
+				<div class="password">
+					<label>Password</label>
+					<input type="password" placeholder="Your password" class="input-wrapper"/>
+				</div>
+				<div class="txt3">
+					<a href="#">Forgot password?</a>
+					<button class="btn3">Login</button>
+				</div>
+			</div>
+			<div class="txt4">
+				<a href="#">Hindi</a><span class="arr">˃</span>
+			</div>
+			<div class="footer">
+				<a href="#">About · </a>
+				<a href="#">Careers · </a>
+				<a href="#">Privacy · </a>
+				<a href="#">Terms · </a>
+				<a href="#">Contact · </a>
+				<a href="#">Languages · </a>
+				<a href="#">Your Ad Choices · </a>
+				© Quora Inc. 2020
+			</div>
+		</div>
+	</body>
+</html>
