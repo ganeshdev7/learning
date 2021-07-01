@@ -1,3 +1,134 @@
 <html>
-	
+	<head>
+		<title>Assignment 1</title>
+		<style>
+			body {
+				font-family: Arial;
+			}
+			.w-header {
+				background: #707070;
+				width: 250px;
+				height: 30px;
+				border-radius: 5px 5px 0px 0px;
+				position: fixed;
+				right: 10px;
+				bottom: 0;
+			}
+			.txt {
+				margin-top: -18px;
+				margin-left: 20px;
+				font-size: 15px;
+				color: #fff;
+				font-weight: 600;
+				text-align: center;
+			}
+			.img1 {
+				width: 20px;
+				height: 20px;
+				padding-left: 15px;
+				padding-top: 5px;
+			}
+			.form {
+				width: 250px;
+				height: 300px;
+				background: #EAEFF2;
+				padding-top: 15px;
+				position: fixed;
+				right: 10px;
+				bottom: 0;
+				display: none;
+			}
+			label {
+				margin-left: 15px;
+				margin-bottom: 5px;
+				color: #747474;
+			}
+			input  {
+				width: 217px;
+				height: 60px;
+				border: 1px solid#ccc;
+				border-radius: 5px;
+				margin-bottom: 10px;
+				margin-left: 15px;
+				margin-top: 5px;
+			}
+			.des {
+				height: 130px;
+			}
+			.submit input {
+				border: none;
+				border-radius: 5px;
+				background: #FF4F04;
+				color: #fff;
+				width: 217px;
+				height: 30px;
+				font-size: 15px;
+				font-weight: 600;
+				cursor: pointer;
+			}
+			.w-success {
+				position: fixed;
+				right: 25px;
+				bottom: 70px;
+			}
+			.txt1 {
+			    width: 217px;
+				font-size: 13px;
+				text-align: center;
+				margin: 10px auto;
+			}
+			.txt2 {
+				font-size: 13px;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="w-header">
+				<img src="./head.png" class="img1">
+				<div class="txt">Customer Care Support</div>
+				<span>^</span>
+				<span></span>
+			</div>
+			<div class="form">
+				<div class="w-form">
+					<label>Your Query</label>
+					<input type="text" />
+					<label>Description</label>
+					<input type="text" class="des" />
+					<div class="submit" onclick="fn1()">
+						<input type="button" value="SUBMIT" />
+					</div>
+				</div>
+				<div class="w-success" id="success">
+					<div class="txt1">
+						Thanks for getting in touch with us, Our customer service executive will contact you
+					</div>
+					<div class="txt2">
+						Can we help you with anything else?
+					</div>
+					<div class="submit">
+						<input type="button" value="YES"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var acc = document.getElementsByClassName("w-header");
+			var i;
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+			  });
+			}
+			function fn1() {
+				document.getElementById('success').style.display='block';
+			}
+		</script>
+	</body>
 </html>
